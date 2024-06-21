@@ -208,6 +208,13 @@
 
       var player = parent.GetPlayer();
       player.SetVar("storyline_rec_result");
+
+      var player = parent.GetPlayer();
+      player.SetVar("storyline_rec_result", speechResult);
+      console.log(speechResult);
+      if (speechResult) {
+        showButtons("inline-block");
+      }
     }
 
     testBtn.addEventListener("click", testSpeech);
